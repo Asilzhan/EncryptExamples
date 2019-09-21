@@ -42,18 +42,33 @@ namespace Encryption
     {
         public string Key { get; set; }
 
-        public Vizhiner() { }
+
+        private Dictionary<char, byte> dict;
+        public Vizhiner()
+        {
+            dict = new Dictionary<char, byte>();
+        }
         public Vizhiner(string key)
         {
             Key = key;
+            dict = new Dictionary<char, byte>();
         }
-
+        private void InitDict()
+        {
+            dict = new Dictionary<char, byte>();
+            for (byte i = 0; i < 26; i++)
+            {
+                dict.Add((char)((byte)'a' + i), i);
+                dict.Add((char)((byte)'A' + i), i);
+            }
+        }
         public string Encrypt(string m)
         {
             StringBuilder stringBuilder = new StringBuilder(m);
             for (int i = 0; i < m.Length; i++)
             {
-                stringBuilder[i] = (char)((byte)m[i] + (byte)Key[i]);
+                stringBuilder[i] = dict. a dict[m[i]]+dict[Key[i%Key.Length]]
+                stringBuilder[i] = (char)((byte)m[i] + (byte)Key[i%Key.Length]);
             }
             return stringBuilder.ToString();
         }
@@ -63,7 +78,7 @@ namespace Encryption
             StringBuilder stringBuilder = new StringBuilder(c);
             for (int i = 0; i < c.Length; i++)
             {
-                stringBuilder[i] = (char)((byte)c[i] - (byte)Key[i]);
+                stringBuilder[i] = (char)((byte)c[i] - (byte)Key[i%Key.Length]);
             }
             return stringBuilder.ToString();
         }

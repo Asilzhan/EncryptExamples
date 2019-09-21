@@ -32,18 +32,14 @@ namespace Encryption
             richTextBox1.Text = cesar.Decrypt(richTextBox2.Text);
         }
 
-        
-
-        
-
         private void button1_Click(object sender, EventArgs e)
         {
-            richTextBox3.Text = Encrypt(richTextBox8.Text, keyText.Text);
+            richTextBox4.Text = vizhiner.Encrypt(richTextBox3.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            richTextBox8.Text = Decrypt(richTextBox3.Text, keyText.Text);
+            richTextBox3.Text = vizhiner.Decrypt(richTextBox4.Text);
         }
 
         private void keyValue_ValueChanged(object sender, EventArgs e)
