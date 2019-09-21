@@ -34,65 +34,65 @@
             this.encryptButton = new System.Windows.Forms.Button();
             this.decryptButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.cesar = new System.Windows.Forms.TabPage();
+            this.cesarTab = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.keyValue = new System.Windows.Forms.NumericUpDown();
-            this.vizhiner = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.keyText = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.vizhinerTab = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.cesar.SuspendLayout();
+            this.cesarTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.keyValue)).BeginInit();
-            this.vizhiner.SuspendLayout();
+            this.vizhinerTab.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(8, 6);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(234, 222);
+            this.richTextBox1.Size = new System.Drawing.Size(394, 222);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(270, 6);
+            this.richTextBox2.Location = new System.Drawing.Point(511, 6);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(232, 222);
+            this.richTextBox2.Size = new System.Drawing.Size(446, 222);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
             // 
             // encryptButton
             // 
-            this.encryptButton.Location = new System.Drawing.Point(167, 231);
+            this.encryptButton.Location = new System.Drawing.Point(408, 111);
             this.encryptButton.Name = "encryptButton";
-            this.encryptButton.Size = new System.Drawing.Size(75, 23);
+            this.encryptButton.Size = new System.Drawing.Size(97, 23);
             this.encryptButton.TabIndex = 2;
-            this.encryptButton.Text = "Шифрлау";
+            this.encryptButton.Text = "Шифрлау >>";
             this.encryptButton.UseVisualStyleBackColor = true;
             this.encryptButton.Click += new System.EventHandler(this.encryptButton_Click);
             // 
             // decryptButton
             // 
-            this.decryptButton.Location = new System.Drawing.Point(270, 231);
+            this.decryptButton.Location = new System.Drawing.Point(408, 140);
             this.decryptButton.Name = "decryptButton";
-            this.decryptButton.Size = new System.Drawing.Size(75, 23);
+            this.decryptButton.Size = new System.Drawing.Size(97, 23);
             this.decryptButton.TabIndex = 3;
-            this.decryptButton.Text = "Дешифрлау";
+            this.decryptButton.Text = "<< Дешифрлау";
             this.decryptButton.UseVisualStyleBackColor = true;
             this.decryptButton.Click += new System.EventHandler(this.decryptButton_Click);
             // 
@@ -102,54 +102,65 @@
             this.groupBox1.Controls.Add(this.richTextBox6);
             this.groupBox1.Location = new System.Drawing.Point(8, 260);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(720, 359);
+            this.groupBox1.Size = new System.Drawing.Size(949, 421);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ақпарат";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(440, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(489, 383);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // richTextBox6
             // 
             this.richTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox6.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.richTextBox6.Location = new System.Drawing.Point(3, 19);
+            this.richTextBox6.Location = new System.Drawing.Point(3, 32);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.ReadOnly = true;
-            this.richTextBox6.Size = new System.Drawing.Size(325, 218);
+            this.richTextBox6.Size = new System.Drawing.Size(431, 383);
             this.richTextBox6.TabIndex = 4;
             this.richTextBox6.Text = resources.GetString("richTextBox6.Text");
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.cesar);
-            this.tabControl1.Controls.Add(this.vizhiner);
+            this.tabControl1.Controls.Add(this.cesarTab);
+            this.tabControl1.Controls.Add(this.vizhinerTab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(989, 725);
+            this.tabControl1.Size = new System.Drawing.Size(981, 750);
             this.tabControl1.TabIndex = 5;
             // 
-            // cesar
+            // cesarTab
             // 
-            this.cesar.BackColor = System.Drawing.SystemColors.Control;
-            this.cesar.Controls.Add(this.label1);
-            this.cesar.Controls.Add(this.keyValue);
-            this.cesar.Controls.Add(this.groupBox1);
-            this.cesar.Controls.Add(this.richTextBox1);
-            this.cesar.Controls.Add(this.encryptButton);
-            this.cesar.Controls.Add(this.richTextBox2);
-            this.cesar.Controls.Add(this.decryptButton);
-            this.cesar.Location = new System.Drawing.Point(4, 22);
-            this.cesar.Name = "cesar";
-            this.cesar.Padding = new System.Windows.Forms.Padding(3);
-            this.cesar.Size = new System.Drawing.Size(981, 699);
-            this.cesar.TabIndex = 0;
-            this.cesar.Text = "Цезарь";
+            this.cesarTab.BackColor = System.Drawing.SystemColors.Control;
+            this.cesarTab.Controls.Add(this.label1);
+            this.cesarTab.Controls.Add(this.keyValue);
+            this.cesarTab.Controls.Add(this.groupBox1);
+            this.cesarTab.Controls.Add(this.richTextBox1);
+            this.cesarTab.Controls.Add(this.encryptButton);
+            this.cesarTab.Controls.Add(this.richTextBox2);
+            this.cesarTab.Controls.Add(this.decryptButton);
+            this.cesarTab.Location = new System.Drawing.Point(4, 22);
+            this.cesarTab.Name = "cesarTab";
+            this.cesarTab.Padding = new System.Windows.Forms.Padding(3);
+            this.cesarTab.Size = new System.Drawing.Size(973, 724);
+            this.cesarTab.TabIndex = 0;
+            this.cesarTab.Text = "Цезарь";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 236);
+            this.label1.Location = new System.Drawing.Point(405, 192);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 6;
@@ -157,140 +168,131 @@
             // 
             // keyValue
             // 
-            this.keyValue.Location = new System.Drawing.Point(41, 234);
+            this.keyValue.Location = new System.Drawing.Point(408, 208);
             this.keyValue.Name = "keyValue";
-            this.keyValue.Size = new System.Drawing.Size(120, 20);
+            this.keyValue.Size = new System.Drawing.Size(97, 20);
             this.keyValue.TabIndex = 5;
+            this.keyValue.ValueChanged += new System.EventHandler(this.keyValue_ValueChanged);
             // 
-            // vizhiner
+            // keyText
             // 
-            this.vizhiner.BackColor = System.Drawing.SystemColors.Control;
-            this.vizhiner.Controls.Add(this.label2);
-            this.vizhiner.Controls.Add(this.keyText);
-            this.vizhiner.Controls.Add(this.groupBox2);
-            this.vizhiner.Controls.Add(this.richTextBox3);
-            this.vizhiner.Controls.Add(this.button1);
-            this.vizhiner.Controls.Add(this.richTextBox4);
-            this.vizhiner.Controls.Add(this.button2);
-            this.vizhiner.Location = new System.Drawing.Point(4, 22);
-            this.vizhiner.Name = "vizhiner";
-            this.vizhiner.Padding = new System.Windows.Forms.Padding(3);
-            this.vizhiner.Size = new System.Drawing.Size(981, 699);
-            this.vizhiner.TabIndex = 1;
-            this.vizhiner.Text = "Вижинер";
+            this.keyText.Location = new System.Drawing.Point(12, 266);
+            this.keyText.Name = "keyText";
+            this.keyText.Size = new System.Drawing.Size(949, 20);
+            this.keyText.TabIndex = 10;
+            this.keyText.TextChanged += new System.EventHandler(this.keyText_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 234);
+            this.label2.Location = new System.Drawing.Point(12, 250);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "Кілт";
             // 
-            // keyText
+            // vizhinerTab
             // 
-            this.keyText.Location = new System.Drawing.Point(12, 250);
-            this.keyText.Name = "keyText";
-            this.keyText.Size = new System.Drawing.Size(490, 20);
-            this.keyText.TabIndex = 10;
+            this.vizhinerTab.BackColor = System.Drawing.SystemColors.Control;
+            this.vizhinerTab.Controls.Add(this.groupBox2);
+            this.vizhinerTab.Controls.Add(this.richTextBox3);
+            this.vizhinerTab.Controls.Add(this.button1);
+            this.vizhinerTab.Controls.Add(this.richTextBox4);
+            this.vizhinerTab.Controls.Add(this.button2);
+            this.vizhinerTab.Controls.Add(this.label2);
+            this.vizhinerTab.Controls.Add(this.keyText);
+            this.vizhinerTab.Location = new System.Drawing.Point(4, 22);
+            this.vizhinerTab.Name = "vizhinerTab";
+            this.vizhinerTab.Padding = new System.Windows.Forms.Padding(3);
+            this.vizhinerTab.Size = new System.Drawing.Size(973, 724);
+            this.vizhinerTab.TabIndex = 1;
+            this.vizhinerTab.Text = "Вижинер";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Controls.Add(this.richTextBox5);
-            this.groupBox2.Location = new System.Drawing.Point(8, 305);
+            this.groupBox2.Controls.Add(this.richTextBox8);
+            this.groupBox2.Location = new System.Drawing.Point(12, 292);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(494, 227);
-            this.groupBox2.TabIndex = 9;
+            this.groupBox2.Size = new System.Drawing.Size(949, 395);
+            this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ақпарат";
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox5.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.richTextBox5.Location = new System.Drawing.Point(6, 19);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.ReadOnly = true;
-            this.richTextBox5.Size = new System.Drawing.Size(325, 202);
-            this.richTextBox5.TabIndex = 2;
-            this.richTextBox5.Text = resources.GetString("richTextBox5.Text");
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Location = new System.Drawing.Point(8, 5);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(234, 222);
-            this.richTextBox3.TabIndex = 5;
-            this.richTextBox3.Text = "";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(167, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Шифрлау";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Location = new System.Drawing.Point(270, 5);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(232, 222);
-            this.richTextBox4.TabIndex = 6;
-            this.richTextBox4.Text = "";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(270, 276);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Дешифрлау";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(73, -54);
+            this.pictureBox2.Location = new System.Drawing.Point(551, 32);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(349, 334);
+            this.pictureBox2.Size = new System.Drawing.Size(378, 383);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // richTextBox8
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(334, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 146);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.richTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox8.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.richTextBox8.Location = new System.Drawing.Point(3, 32);
+            this.richTextBox8.Name = "richTextBox8";
+            this.richTextBox8.ReadOnly = true;
+            this.richTextBox8.Size = new System.Drawing.Size(542, 383);
+            this.richTextBox8.TabIndex = 4;
+            this.richTextBox8.Text = resources.GetString("richTextBox8.Text");
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(394, 222);
+            this.richTextBox3.TabIndex = 12;
+            this.richTextBox3.Text = "";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(412, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Шифрлау >>";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Location = new System.Drawing.Point(515, 12);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(446, 222);
+            this.richTextBox4.TabIndex = 13;
+            this.richTextBox4.Text = "";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(412, 146);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "<< Дешифрлау";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 725);
+            this.ClientSize = new System.Drawing.Size(981, 750);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.cesar.ResumeLayout(false);
-            this.cesar.PerformLayout();
+            this.cesarTab.ResumeLayout(false);
+            this.cesarTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.keyValue)).EndInit();
-            this.vizhiner.ResumeLayout(false);
-            this.vizhiner.PerformLayout();
+            this.vizhinerTab.ResumeLayout(false);
+            this.vizhinerTab.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,21 +305,21 @@
         private System.Windows.Forms.Button decryptButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage cesar;
-        private System.Windows.Forms.TabPage vizhiner;
+        private System.Windows.Forms.TabPage cesarTab;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown keyValue;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox keyText;
+        private System.Windows.Forms.RichTextBox richTextBox6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabPage vizhinerTab;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.RichTextBox richTextBox8;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox keyText;
     }
 }
 

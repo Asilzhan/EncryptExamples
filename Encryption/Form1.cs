@@ -12,69 +12,48 @@ namespace Encryption
 {
     public partial class Form1 : Form
     {
+        Cesar cesar;
+        Vizhiner vizhiner;
         public Form1()
         {
             InitializeComponent();
+            cesar = new Cesar();
+            vizhiner = new Vizhiner();
         }
 
         private void encryptButton_Click(object sender, EventArgs e)
         {
-            richTextBox2.Text = CesarEncrypt(richTextBox1.Text, (byte)keyValue.Value);
+            richTextBox2.Text = cesar.Encrypt(richTextBox1.Text);
         }
         
         private void decryptButton_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = CesarDecrypt(richTextBox2.Text, (byte)keyValue.Value);
+
+            richTextBox1.Text = cesar.Decrypt(richTextBox2.Text);
         }
 
-        private string CesarEncrypt(string m, byte key)
-        {
-            StringBuilder stringBuilder = new StringBuilder(m);
-            for (int i = 0; i < m.Length; i++)
-            {
-                stringBuilder[i] = (char)((byte)m[i] + key);
-            }
-            return stringBuilder.ToString();
-        }
+        
 
-        private string CesarDecrypt(string c, byte key)
-        {
-            StringBuilder stringBuilder = new StringBuilder(c);
-            for (int i = 0; i < c.Length; i++)
-            {
-                stringBuilder[i] = (char)((byte)c[i] - key);
-            }
-            return stringBuilder.ToString();
-        }
-
-        private string VizhinerEncrypt(string m, string key)
-        {
-            StringBuilder stringBuilder = new StringBuilder(m);
-            for (int i = 0; i < m.Length; i++)
-            {
-                stringBuilder[i] = (char)((byte)m[i] + (byte)key[i]);
-            }
-            return stringBuilder.ToString();
-        }
-
-        private string VizhinerDecrypt(string c, string key)
-        {
-            StringBuilder stringBuilder = new StringBuilder(c);
-            for (int i = 0; i < c.Length; i++)
-            {
-                stringBuilder[i] = (char)((byte)c[i] - (byte)key[i]);
-            }
-            return stringBuilder.ToString();
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            richTextBox4.Text = VizhinerEncrypt(richTextBox3.Text, keyText.Text);
+            richTextBox3.Text = Encrypt(richTextBox8.Text, keyText.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            richTextBox3.Text = VizhinerDecrypt(richTextBox4.Text, keyText.Text);
+            richTextBox8.Text = Decrypt(richTextBox3.Text, keyText.Text);
+        }
+
+        private void keyValue_ValueChanged(object sender, EventArgs e)
+        {
+            cesar.Key = (byte)keyValue.Value;
+        }
+
+        private void keyText_TextChanged(object sender, EventArgs e)
+        {
+            vizhiner.Key = keyText.Text;
         }
     }
 }
