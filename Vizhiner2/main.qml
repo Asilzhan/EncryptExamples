@@ -1,6 +1,6 @@
 import QtQuick 2.13
 import QtQuick.Window 2.13
-import QtQuick.Controls 2.14
+import QtQuick.Controls 2.12
 
 Window {
     visible: true
@@ -8,7 +8,5 @@ Window {
     height: 480
     title: qsTr("Hello World")
 
-    GroupBox {
-        label: Label { text: qsTr("Вижинер шифрі") }
-    }
+
 }
