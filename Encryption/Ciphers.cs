@@ -20,9 +20,14 @@ namespace Encryption
         public string Encrypt(string m)
         {
             StringBuilder stringBuilder = new StringBuilder(m);
+            int index, t;
             for (int i = 0; i < m.Length; i++)
             {
-                stringBuilder[i] = (char)((byte)m[i] + Key);
+                index = m[i];
+                t = index <= 'Z' ? 65 : 97;
+                index -= t;
+                index = (index + Key) % 26 + t;
+                stringBuilder[i] = (char)index;
             }
             return stringBuilder.ToString();
         }
@@ -30,9 +35,14 @@ namespace Encryption
         public string Decrypt(string c)
         {
             StringBuilder stringBuilder = new StringBuilder(c);
+            int index, t;
             for (int i = 0; i < c.Length; i++)
             {
-                stringBuilder[i] = (char)((byte)c[i] - Key);
+                index = c[i];
+                t = index <= 'Z' ? 65 : 97;
+                index -= t;
+                index = (index - Key) % 26 + t;
+                stringBuilder[i] = (char)index;
             }
             return stringBuilder.ToString();
         }
@@ -42,7 +52,6 @@ namespace Encryption
     {
         public string Key { get; set; }
 
-
         private Dictionary<char, byte> dict;
         public Vizhiner()
         {
@@ -50,7 +59,7 @@ namespace Encryption
         }
         public Vizhiner(string key)
         {
-            Key = key;
+            Key = key.ToLower();
             dict = new Dictionary<char, byte>();
         }
         private void InitDict()
@@ -65,10 +74,12 @@ namespace Encryption
         public string Encrypt(string m)
         {
             StringBuilder stringBuilder = new StringBuilder(m);
+            string text = m.ToLower();
+            char c;
             for (int i = 0; i < m.Length; i++)
             {
-                stringBuilder[i] = dict. a dict[m[i]]+dict[Key[i%Key.Length]]
-                stringBuilder[i] = (char)((byte)m[i] + (byte)Key[i%Key.Length]);
+                c = (char)((text[i] - 'a' + Key[i % Key.Length]-'a') % 26 + 'a');
+                stringBuilder[i] = char.IsUpper(m[i]) ? char.ToUpper(c) : c;
             }
             return stringBuilder.ToString();
         }
@@ -76,9 +87,13 @@ namespace Encryption
         public string Decrypt(string c)
         {
             StringBuilder stringBuilder = new StringBuilder(c);
+            string text = c.ToLower();
+            int t;
             for (int i = 0; i < c.Length; i++)
             {
-                stringBuilder[i] = (char)((byte)c[i] - (byte)Key[i%Key.Length]);
+                t = (text[i] - Key[i % Key.Length]) % 26;
+                if (t < 0) t += 26;
+                stringBuilder[i] = char.IsUpper(c[i])?char.ToUpper((char)(t+'a')) : (char)(t + 'a');
             }
             return stringBuilder.ToString();
         }

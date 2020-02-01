@@ -49,7 +49,11 @@ namespace Encryption
 
         private void keyText_TextChanged(object sender, EventArgs e)
         {
-            vizhiner.Key = keyText.Text;
+            vizhiner.Key = keyText.Text.ToLower();
+        }
+
+        private void richTextBox1_DoubleClick(object sender, EventArgs e)
+        {
         }
     }
 }
