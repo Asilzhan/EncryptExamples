@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CesarView.qml</file>
+        <file>VizhinerView.qml</file>
+    </qresource>
+</RCC>
